@@ -385,8 +385,8 @@ class _SignupWidgetState extends State<SignupWidget> {
                                 return;
                               }
 
-                              context.goNamedAuth(
-                                  DashboardWidget.routeName, context.mounted);
+                              context.pushNamedAuth(
+                                  DetailsWidget.routeName, context.mounted);
                             },
                             text: 'Create Account',
                             options: FFButtonOptions(

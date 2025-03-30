@@ -1,5 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
 import 'onboarding1_model.dart';
 export 'onboarding1_model.dart';
@@ -190,11 +191,20 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget> {
                               color: Color(0xFFFF5B8F),
                               shape: BoxShape.circle,
                             ),
-                            child: Icon(
-                              Icons.arrow_forward_rounded,
-                              color: FlutterFlowTheme.of(context)
-                                  .primaryBackground,
-                              size: 24.0,
+                            child: InkWell(
+                              splashColor: Colors.transparent,
+                              focusColor: Colors.transparent,
+                              hoverColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                              onTap: () async {
+                                context.pushNamed(Onboarding2Widget.routeName);
+                              },
+                              child: Icon(
+                                Icons.arrow_forward_rounded,
+                                color: FlutterFlowTheme.of(context)
+                                    .primaryBackground,
+                                size: 24.0,
+                              ),
                             ),
                           ),
                         ],

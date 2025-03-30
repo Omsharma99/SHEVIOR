@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'emergency_helpline_model.dart';
@@ -67,8 +68,8 @@ class _EmergencyHelplineWidgetState extends State<EmergencyHelplineWidget> {
                       color: FlutterFlowTheme.of(context).info,
                       size: 24.0,
                     ),
-                    onPressed: () {
-                      print('IconButton pressed ...');
+                    onPressed: () async {
+                      context.pushNamed(DashboardWidget.routeName);
                     },
                   ),
                 ),

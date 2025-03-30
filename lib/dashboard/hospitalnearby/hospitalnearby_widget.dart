@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
 import 'hospitalnearby_model.dart';
 export 'hospitalnearby_model.dart';
@@ -79,8 +80,8 @@ class _HospitalnearbyWidgetState extends State<HospitalnearbyWidget> {
                             color: FlutterFlowTheme.of(context).info,
                             size: 24.0,
                           ),
-                          onPressed: () {
-                            print('IconButton pressed ...');
+                          onPressed: () async {
+                            context.pushNamed(DashboardWidget.routeName);
                           },
                         ),
                         Text(

@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
 import 'voice_model.dart';
 export 'voice_model.dart';
@@ -56,14 +57,23 @@ class _VoiceWidgetState extends State<VoiceWidget> {
         appBar: AppBar(
           backgroundColor: Color(0xFFFF5B8F),
           automaticallyImplyLeading: true,
-          title: Text(
-            'Voice Commands',
-            style: FlutterFlowTheme.of(context).headlineSmall.override(
-                  fontFamily: 'Inter Tight',
-                  color: Color(0xFFF3F4F6),
-                  letterSpacing: 0.0,
-                  fontWeight: FontWeight.bold,
-                ),
+          title: InkWell(
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: () async {
+              context.pushNamed(DashboardWidget.routeName);
+            },
+            child: Text(
+              'Voice Commands',
+              style: FlutterFlowTheme.of(context).headlineSmall.override(
+                    fontFamily: 'Inter Tight',
+                    color: Color(0xFFF3F4F6),
+                    letterSpacing: 0.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+            ),
           ),
           actions: [],
           centerTitle: false,

@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
 import 'sos_model.dart';
 export 'sos_model.dart';
@@ -99,8 +100,8 @@ class _SosWidgetState extends State<SosWidget> {
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
                 child: FFButtonWidget(
-                  onPressed: () {
-                    print('Button pressed ...');
+                  onPressed: () async {
+                    context.pushNamed(DashboardWidget.routeName);
                   },
                   text: 'Cancel',
                   options: FFButtonOptions(

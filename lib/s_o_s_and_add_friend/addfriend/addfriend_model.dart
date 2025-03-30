@@ -1,4 +1,5 @@
 import '/flutter_flow/flutter_flow_util.dart';
+import '/index.dart';
 import 'addfriend_widget.dart' show AddfriendWidget;
 import 'package:flutter/material.dart';
 
